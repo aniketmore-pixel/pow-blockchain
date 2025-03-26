@@ -1,0 +1,104 @@
+PS D:\coding-files\blockchain-simulation> python -u "d:\coding-files\blockchain-simulation\pow_blockchain.py" 
+
+Adding first block...
+Block 1 mined: 000d3d6e5533973daf78511631f5dba0f8218a7a318b94e3bc043f66cbef80c2
+
+Adding second block...
+Block 2 mined: 000ed4159ba36a4cefeccc8192a603bf8d25b08ec17ccbd2fbd953a4f2eba184
+
+Adding third block...
+Block 3 mined: 000c5397a3d749619fb97ccfa5ca64b42ae9bbed7b66212a7487a5eea00c1511
+
+Adding fourth block...
+Block 4 mined: 0000ada96a122787f9ba1c5f215f43aea8dac6ff44c0078dc4cbc58cfc6490f5
+
+Blockchain Details:
+
+Block 0:
+Timestamp: 1742994787.509623
+Transactions: Genesis Block
+Previous Hash: 0
+Hash: 956ccf84e6298289a1a7aeba3d79a617fc4eb95badda691bb6c1ad6978def5eb
+Nonce: 0
+-----------------------------
+
+Block 1:
+Timestamp: 1742994787.510107
+Transactions: ['Aniket pays Pankaj 24 BTC', 'Pankaj pays Kunal 7 BTC']
+Previous Hash: 956ccf84e6298289a1a7aeba3d79a617fc4eb95badda691bb6c1ad6978def5eb
+Hash: 000d3d6e5533973daf78511631f5dba0f8218a7a318b94e3bc043f66cbef80c2
+Nonce: 1562
+-----------------------------
+
+Block 2:
+Timestamp: 1742994787.5159583
+Transactions: ['Digvijay pays Satvik 3 BTC']
+Previous Hash: 000d3d6e5533973daf78511631f5dba0f8218a7a318b94e3bc043f66cbef80c2
+Hash: 000ed4159ba36a4cefeccc8192a603bf8d25b08ec17ccbd2fbd953a4f2eba184
+Nonce: 3273
+-----------------------------
+
+Block 3:
+Timestamp: 1742994787.5308805
+Transactions: ['Vedant pays Janhavi 42 BTC']
+Previous Hash: 000ed4159ba36a4cefeccc8192a603bf8d25b08ec17ccbd2fbd953a4f2eba184
+Hash: 000c5397a3d749619fb97ccfa5ca64b42ae9bbed7b66212a7487a5eea00c1511
+Nonce: 5116
+-----------------------------
+
+Block 4:
+Timestamp: 1742994787.5539367
+Transactions: ['Sara pays Aniket 12 BTC']
+Previous Hash: 000c5397a3d749619fb97ccfa5ca64b42ae9bbed7b66212a7487a5eea00c1511
+Hash: 0000ada96a122787f9ba1c5f215f43aea8dac6ff44c0078dc4cbc58cfc6490f5
+Nonce: 1180
+-----------------------------
+
+Checking blockchain validity: True
+
+Tampering with blockchain...
+
+Block 1 tampered!
+
+Blockchain Details:
+
+Block 0:
+Timestamp: 1742994787.509623
+Transactions: Genesis Block
+Previous Hash: 0
+Hash: 956ccf84e6298289a1a7aeba3d79a617fc4eb95badda691bb6c1ad6978def5eb
+Nonce: 0
+-----------------------------
+
+Block 1:
+Timestamp: 1742994787.510107
+Transactions: ['Amit pays Tuhin 30 BTC']
+Previous Hash: 956ccf84e6298289a1a7aeba3d79a617fc4eb95badda691bb6c1ad6978def5eb
+Hash: 653e15ff7d48d6cd8bd9e0d2a3cec63cc098ab13655cb1b72e2c87df1a6b2d5f
+Nonce: 1562
+-----------------------------
+
+Block 2:
+Timestamp: 1742994787.5159583
+Transactions: ['Digvijay pays Satvik 3 BTC']
+Previous Hash: 000d3d6e5533973daf78511631f5dba0f8218a7a318b94e3bc043f66cbef80c2
+Hash: 000ed4159ba36a4cefeccc8192a603bf8d25b08ec17ccbd2fbd953a4f2eba184
+Nonce: 3273
+-----------------------------
+
+Block 3:
+Timestamp: 1742994787.5308805
+Transactions: ['Vedant pays Janhavi 42 BTC']
+Previous Hash: 000ed4159ba36a4cefeccc8192a603bf8d25b08ec17ccbd2fbd953a4f2eba184
+Hash: 000c5397a3d749619fb97ccfa5ca64b42ae9bbed7b66212a7487a5eea00c1511
+Nonce: 5116
+-----------------------------
+
+Block 4:
+Timestamp: 1742994787.5539367
+Transactions: ['Sara pays Aniket 12 BTC']
+Previous Hash: 000c5397a3d749619fb97ccfa5ca64b42ae9bbed7b66212a7487a5eea00c1511
+Hash: 0000ada96a122787f9ba1c5f215f43aea8dac6ff44c0078dc4cbc58cfc6490f5
+Nonce: 1180
+-----------------------------
+Checking blockchain validity after tampering: False
